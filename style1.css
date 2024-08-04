@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.me {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 166, 0);
+}
+
+.detal {
+    margin-left: 8%;
+    margin-top: 13%;
+    display: inline-block;
+    position: relative;
+    z-index: 1; /* Ensures text is above the image */
+}
+
+.detal h1 {
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+span {
+    color: orange;
+}
+
+.detal p {
+    color: #555;
+    line-height: 22px;
+}
+
+.detal a {
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.images {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0; /* Places image behind text */
+    pointer-events: none; /* Disables pointer events on the image container */
+}
+
+.girl {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 100px;
+    width: 50%; /* Adjust size as needed to enlarge the image */
+    height: auto;
+    opacity: 0.5; /* Adjust opacity if needed */
+    z-index: -1; /* Ensures image is behind content */
+    pointer-events: none; /* Disables pointer events on the image */
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #555;
+}
